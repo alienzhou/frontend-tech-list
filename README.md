@@ -325,7 +325,7 @@
 
 ## 8. 业务相关
 
-> 在业务中往往还有一些与“业务无关”的场景需求，不论是什么业务几乎都会遇到；因此，在变与不变中，我们更需要去抽象出这些问题
+> 在业务中往往还有一些与“业务无关”的场景需求 —— 不论是什么业务几乎都会遇到；因此，在变与不变中，我们更需要去抽象出这些问题。
 
 ### 8.1. 数据打点上报
 
@@ -378,7 +378,7 @@
 
 ## 9. 不归类的好文
 
-> 开卷有益
+> 开卷有益。
 
 - [Recursion? We don't need no stinking recursion!](http://raganwald.com/2018/05/20/we-dont-need-no-stinking-recursion.html)：如何将一些递归改为循环（尾递归优化）
 - [Turning your web traffic into a Super Computer](https://ben.akrin.com/?p=5997)：通过 Web Worker 和 WebSocket 来将全世界的电脑连接成超级计算机
