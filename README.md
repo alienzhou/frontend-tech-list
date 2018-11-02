@@ -4,6 +4,8 @@
 
 不论你是正在自学前端，还是对前端某些技术熟练掌握但某些还未涉足，我都希望这份清单能帮助你 review 一些前端的基础能力。
 
+[TOC]
+
 ## 0. 年度报告
 
 - [2018 前端工具调查报告](https://ashleynolan.co.uk/blog/frontend-tooling-survey-2018-results)
