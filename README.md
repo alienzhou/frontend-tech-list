@@ -80,11 +80,11 @@
 ### 2.3. Linter
 
 - [JS Linter 进化史](https://zhuanlan.zhihu.com/p/34656263)
-- [为何要在项目汇总使用ESLint \[英\]](https://medium.com/the-node-js-collection/why-and-how-to-use-eslint-in-your-project-742d0bc61ed7)
+- [为何要在项目汇总使用 ESLint \[英\]](https://medium.com/the-node-js-collection/why-and-how-to-use-eslint-in-your-project-742d0bc61ed7)
 
 ### 2.4. 静态类型（Typescript/Flow）
 
-- [Typescript总体架构 \[英\]](https://github.com/Microsoft/TypeScript/wiki/Architectural-Overview)
+- [Typescript 总体架构 \[英\]](https://github.com/Microsoft/TypeScript/wiki/Architectural-Overview)
 - 为什么要在 JavaScript 中进行静态类型检查：
     - [第一部分](https://www.jianshu.com/p/bda750e2d15e)
     - [第二、三部分](https://www.jianshu.com/p/289b3c734a9f)
@@ -97,7 +97,8 @@
 
 ### 2.6. CSS预处理与模块化
 
-- [CSS模块化方案系列](https://juejin.im/post/5b20e8e0e51d4506c60e47f5)
+- [CSS 进化史 \[英\]](https://medium.com/@perezpriego7/css-evolution-from-css-sass-bem-css-modules-to-styled-components-d4c1da3a659b)
+- [CSS 模块化方案系列](https://juejin.im/post/5b20e8e0e51d4506c60e47f5)
 
 ## 3. 性能优化
 
@@ -206,7 +207,7 @@
 
 ## 5. 自动化测试
 
-> 自动化测试是软件工程的重要部分之一
+> 自动化测试是软件工程的重要部分之一，但却极容易被忽视。
 
 - [2018 前端自动化测试综述 \[英\]](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3)
 - [测试你的前端代码（介绍篇）\[英\]](https://hackernoon.com/testing-your-frontend-code-part-i-introduction-7e307eac4446)
@@ -229,9 +230,9 @@
 - [测试你的前端代码（集成测试篇）\[英\]](https://hackernoon.com/testing-your-frontend-code-part-iv-integration-testing-f1f4609dc4d9)
 - [测试你的前端代码（可视化测试篇）\[英\]](https://medium.com/@giltayar/testing-your-frontend-code-part-v-visual-testing-935864cfb5c7)
 
-## 6. 框架库
+## 6. 框架与类库
 
-> 如果说基础知识是道，那框架与工具可能就是术；理解与学习它，它不要过分沉迷而忘了本质
+> 如果说基础知识是道，那框架与工具可能就是术；学习与理解它们，但千万不要成为它们的奴隶。
 
 ### 6.1. React
 
@@ -258,6 +259,14 @@
 - [如何用 GraphQL 来替代 Redux \[英\]](https://hackernoon.com/how-graphql-replaces-redux-3fff8289221d)
 - [解读 Redux 的设计思路与用法](https://div.io/topic/1309)
 - [(Redux)应用构建的三个原则 \[英\]](https://jaysoo.ca/2016/02/28/organizing-redux-application/#rule-1-organize-by-feature)
+
+### 6.4. RxJS
+
+- [ReactiveX 官网](http://reactivex.io/)：宝石图真的非常形象易读
+- [响应式编程，是明智的选择](https://www.cnblogs.com/android-blogs/p/5586395.html)
+- [图解RxJS \[英\]](https://blog.angularindepth.com/learn-to-combine-rxjs-sequences-with-super-intuitive-interactive-diagrams-20fce8e6511)
+- [调试RxJS：Tooling \[英\]](https://blog.angularindepth.com/debugging-rxjs-4f0340286dd3)
+- [调试RxJS：Logging \[英\]](https://blog.angularindepth.com/debugging-rxjs-part-2-logging-56904459f144)
 
 
 ## 7. 新技术/方向
@@ -337,6 +346,7 @@
     - [二、技术概述](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part02)
     - [三、检测和避免 A/B Test中 bucket不平衡问题](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part03)
     - [四、A/B Test中使用多个控制的启示](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part04)
+- [Netflix A/B Test 实验平台实践 \[英\]](https://medium.com/netflix-techblog/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15)
 - 指导方法
     - [实验中容易遇到的七种问题 \[英\]](https://www.exp-platform.com/Documents/2009-ExPpitfalls.pdf)
     - [实验的七个准则 \[英\]](https://www.exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf)
