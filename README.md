@@ -86,6 +86,7 @@
 
 - [You-Need-to-Know-CSS](https://lhammer.cn/You-need-to-know-css/#/)
 - [CSS布局指南](https://juejin.im/post/5b3b56a1e51d4519646204bb)
+- [在 (S)CSS 中实现主题功能的 4½ 种方法 \[英\]](https://speakerdeck.com/csswizardry/4half-methods-for-theming-in-s-css)
 - [CSS 中的各类换行处理方式 \[英\]](https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/)：处理经典的换行问题
 - [浏览器将rem转成px时有精度误差怎么办？](https://www.zhihu.com/question/264372456)
 - [精准操控的滚动体验，浅谈新标准 Scroll Snap](https://juejin.im/post/5ba079e86fb9a05d1227fddb)
