@@ -86,7 +86,6 @@
 
 - [You-Need-to-Know-CSS](https://lhammer.cn/You-need-to-know-css/#/)
 - [CSS布局指南](https://juejin.im/post/5b3b56a1e51d4519646204bb)
-- [在 (S)CSS 中实现主题功能的 4½ 种方法 \[英\]](https://speakerdeck.com/csswizardry/4half-methods-for-theming-in-s-css)
 - [CSS 中的各类换行处理方式 \[英\]](https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/)：处理经典的换行问题
 - [浏览器将rem转成px时有精度误差怎么办？](https://www.zhihu.com/question/264372456)
 - [精准操控的滚动体验，浅谈新标准 Scroll Snap](https://juejin.im/post/5ba079e86fb9a05d1227fddb)
@@ -94,6 +93,7 @@
 - [巧用 CSS Grid 来创建横向滚动容器 \[英\]](https://uxdesign.cc/creating-horizontal-scrolling-containers-the-right-way-css-grid-c256f64fc585)
 - [如何处理内联元素中的空隙 \[英\]](https://css-tricks.com/fighting-the-space-between-inline-block-elements/)
 - [CSS Stacking Context 里那些鲜为人知的坑](https://segmentfault.com/a/1190000002783265)
+- [在 (S)CSS 中实现主题功能的 4½ 种方法](https://juejin.im/post/5c0feb3bf265da616d5409a5)
 
 ### 1.3. 浏览器
 
@@ -301,6 +301,7 @@
     - [3. diff算法](https://github.com/hujiulong/blog/issues/6)
     - [4. 异步的setState](https://github.com/hujiulong/blog/issues/7)
 - [「react技术栈」单页应用实践快速入门](https://www.jianshu.com/p/0b2acb50f321)
+- [React 生命周期图示](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 ### 6.2. Vue
 
