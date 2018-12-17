@@ -3,7 +3,12 @@ const path = require('path');
 const fs = require('fs');
 
 function convertMd2Html() {
-    const md = fs.readFileSync(path.resolve(__dirname, '../README.md'), 'utf-8');
+    let md = fs.readFileSync(path.resolve(__dirname, '../README.md'), 'utf-8');
+    const splitPattern = '## 0. 年度报告';
+    const parts = md.split(splitPattern);
+    parts[1] = parts[1].replace(/- \[/g, '- [ ] [');
+    md = parts.join(splitPattern);
+
     showdown.setFlavor('github');
     const converter = new showdown.Converter();
     const mdHtml = converter.makeHtml(md);

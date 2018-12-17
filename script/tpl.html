@@ -5,11 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{style}}
+    <style>
+        main input[type=checkbox] {
+            opacity: 1;
+            width: auto;
+            line-height: 1;
+            height: 1.5em;
+        }
+        .progress {
+            position: fixed;
+            top: 80px;
+            right: 40px;
+            border-left: 5px solid #ddd;
+            padding-left: 15px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .progress span {
+            color: #3bc536;
+        }
+    </style>
     <title>Frontend Tech List: an overall frontend-tech list for developers</title>
 </head>
 <body>
-    <main style="margin: 50px auto; max-width: 800px;">
+    <div class="progress">当前已完成阅读量：<span id="js-progress">10%</span></div>
+    <main id="js-main" style="margin: 50px auto; max-width: 800px;">
         {{md}}
     </main>
+    <script>
+        var itemKey = 'hasRead';
+        function updateProgress(readNum, total) {
+            var percentage = Math.ceil(readNum / total * 100);
+            document.getElementById('js-progress').textContent = `${percentage}%`;
+        }
+
+        function init() {
+            var hasRead = localStorage.getItem(itemKey);
+            try {
+                hasRead = JSON.parse(hasRead) || [];
+            }
+            catch (e) {
+                console.error(e);
+                hasRead = [];
+            }
+
+            var $checkboxList = document.querySelectorAll('[type=checkbox]');
+            $checkboxList.forEach(function ($n) {
+                $n.removeAttribute('disabled');
+                var cnt = $n.nextElementSibling.textContent;
+                $n.dataset.txt = cnt;
+                if (hasRead.indexOf(cnt) > -1) {
+                    $n.checked = true;
+                }
+            });
+
+            document.getElementById('js-main').dataset.total = $checkboxList.length;
+            updateProgress(hasRead.length, $checkboxList.length);
+        }
+
+        init();
+
+        document.addEventListener('click', function (e) {
+            var target = e.target;
+            if (target.tagName === 'INPUT') {
+                var txt = target.dataset.txt;
+                var hasRead = localStorage.getItem(itemKey);
+                try {
+                    hasRead = JSON.parse(hasRead) || [];
+                }
+                catch (e) {
+                    console.error(e);
+                    hasRead = [];
+                }
+                var idx = hasRead.indexOf(txt);
+                if (target.checked && idx < 0) {
+                    hasRead.push(txt);
+                }
+                else if (!target.checked && idx > -1) {
+                    hasRead.splice(idx, 1);
+                }
+                localStorage.setItem(itemKey, JSON.stringify(hasRead));
+
+                updateProgress(hasRead.length, document.getElementById('js-main').dataset.total);
+            }
+        });
+    </script>
 </body>
 </html>
