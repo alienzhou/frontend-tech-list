@@ -1,0 +1,23 @@
+{
+  "name": "frontend-tech-list",
+  "version": "1.0.0",
+  "description": "学习文章的知识往往是碎片化的。而前端涉及到的面很广，这些知识如果不进行有效梳理，则无法相互串联、形成体系。因此，我结合工作体会将抽象出了一些前端基础能力，并将看过、写过的一些不错的文章进行整理，形成了一份（纯）前端技术清单。",
+  "main": "index.js",
+  "scripts": {
+    "build": "node script/md2html.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alienzhou/frontend-tech-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alienzhou/frontend-tech-list/issues"
+  },
+  "homepage": "https://github.com/alienzhou/frontend-tech-list#readme",
+  "devDependencies": {
+    "picnic": "^6.5.0",
+    "showdown": "^1.9.0"
+  }
+}
