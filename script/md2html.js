@@ -3,7 +3,12 @@ const path = require('path');
 const fs = require('fs');
 
 function convertMd2Html() {
+    const tip = '\r\n> 可以勾选读完的文章，记录会存储在localStorage中，便于下次访问时还原之前的阅读进度。';
+    const title = '# 前端技术清单';
     let md = fs.readFileSync(path.resolve(__dirname, '../README.md'), 'utf-8');
+    const pairs = md.split(title);
+    md = title + tip + pairs[1];
+
     const splitPattern = '## 0. 年度报告';
     const parts = md.split(splitPattern);
     parts[1] = parts[1].replace(/- \[/g, '- [ ] [');
