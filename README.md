@@ -160,7 +160,9 @@
 
 > 性能优化其实就是在理解浏览器的基础上“因地制宜”，因此可以配合1.3节“浏览器”部分进行理解。
 
-强烈推荐把 [Google Web 上性能优化](https://developers.google.com/web/fundamentals/performance/why-performance-matters/) Tab 中的文章都通读一遍，其基本涵盖了现代浏览器中性能优化的所有点，非常系统。下面也摘录了其中一些个人认为非常不错的篇幅。
+强烈推荐把 [Google Web 上性能优化](https://developers.google.com/web/fundamentals/performance/why-performance-matters/) Tab 中的文章都通读一遍，其基本涵盖了现代浏览器中性能优化的所有点。下面也摘录了其中一些个人认为非常不错的篇幅。
+
+同时推荐[🚵 前端性能优化之旅 🚀](https://alienzhou.github.io/fe-performance-journey/)这个站点，里面按照 Web 访问的流程环节来拆解性能优化的知识点，可以帮助你更系统掌握学习性能优化。
 
 ### 3.1. 加载性能
 
