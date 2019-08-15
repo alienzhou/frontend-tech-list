@@ -1,4 +1,6 @@
-> 有同学反馈说清单内容较多，一次无法读完，过了一段时间回来就记不清阅读进度了。为了便于大家分次阅读，我制作了一个页面，在每篇文章前加上选择框（选中checkbox表示已读）用于记录你已经读过的文章，便于下次回来时继续阅读。页面链接：[Frontend Tech List](https://alienzhou.github.io/frontend-tech-list/)
+Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这里推荐一下笔者新梳理的[「前端性能优化指南 🚀」](https://alienzhou.github.io/fe-performance-journey/)，帮助体系化地了解和学习前端性能优化。
+
+---
 
 # 前端技术清单
 
@@ -161,8 +163,6 @@
 > 性能优化其实就是在理解浏览器的基础上“因地制宜”，因此可以配合1.3节“浏览器”部分进行理解。
 
 强烈推荐把 [Google Web 上性能优化](https://developers.google.com/web/fundamentals/performance/why-performance-matters/) Tab 中的文章都通读一遍，其基本涵盖了现代浏览器中性能优化的所有点。下面也摘录了其中一些个人认为非常不错的篇幅。
-
-同时推荐[🚵 前端性能优化之旅 🚀](https://alienzhou.github.io/fe-performance-journey/)这个站点，里面按照 Web 访问的流程环节来拆解性能优化的知识点，可以帮助你更系统掌握学习性能优化。
 
 ### 3.1. 加载性能
 
@@ -435,10 +435,14 @@
     - [基础知识](https://zhuanlan.zhihu.com/p/34501702)
     - [落地方式](https://zhuanlan.zhihu.com/p/34815524)
 
-## 9. 不归类的好文
+## 9. 其他
 
 > 开卷有益。
 
 - [Recursion? We don't need no stinking recursion!](http://raganwald.com/2018/05/20/we-dont-need-no-stinking-recursion.html)：如何将一些递归改为循环（尾递归优化）
 - [Turning your web traffic into a Super Computer](https://ben.akrin.com/?p=5997)：通过 Web Worker 和 WebSocket 来将全世界的电脑连接成超级计算机
 - [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)：高屋建瓴，适合阅读与思考
+
+---
+
+> 有同学反馈说清单内容较多，一次无法读完，过了一段时间回来就记不清阅读进度了。为了便于大家分次阅读，我制作了一个页面，在每篇文章前加上选择框（选中checkbox表示已读）用于记录你已经读过的文章，便于下次回来时继续阅读。页面链接：[Frontend Tech List](https://alienzhou.github.io/frontend-tech-list/)
