@@ -1,5 +1,7 @@
 # 前端技术清单
 
+> 最后更新：2019/10/09
+
 学习文章的知识往往是碎片化的。而前端涉及到的面很广，这些知识如果不进行有效梳理，则无法相互串联、形成体系。因此，我结合工作体会将抽象出了一些前端基础能力，并将看过、写过的一些不错的文章进行整理，形成了一份（纯）前端技术清单。
 
 不论你是正在自学前端，还是对前端某些技术熟练掌握但某些还未涉足，我都希望这份清单能帮助你 review 一些前端的基础能力。
@@ -28,6 +30,9 @@
   - [4.3. CSP](#43-csp)
   - [4.4. HTTPS](#44-https)
   - [4.5. 安全实录](#45-安全实录)
+  - [4.6. 代码保护](#46-代码保护)
+  - [4.7. JS沙盒](#47-js沙盒)
+  - [4.8. 其他](#48-其他)
 - [5. 自动化测试](#5-自动化测试)
   - [5.1. 单元测试](#51-单元测试)
   - [5.2. 端到端测试 (E2E)](#52-端到端测试-e2e)
@@ -44,13 +49,15 @@
   - [7.4. 微前端（Micro Frontends）](#74-微前端micro-frontends)
   - [7.5. HTTP/2](#75-http2)
   - [7.6. WebAssembly](#76-webassembly)
+  - [7.7. 小程序](#77-小程序)
+  - [7.8. Serverless](#78-serverless)
 - [8. 业务相关](#8-业务相关)
   - [8.1. 数据打点上报](#81-数据打点上报)
   - [8.2. 前端监控](#82-前端监控)
   - [8.3. A/B测试](#83-ab测试)
   - [8.4. “服务端推”](#84-服务端推)
   - [8.5. 动效](#85-动效)
-- [9. 不归类的好文](#9-不归类的好文)
+- [9. 其他](#9-其他)
 
 ## 0. 年度报告
 
@@ -80,6 +87,7 @@
 ### 1.2. CSS
 
 - [You-Need-to-Know-CSS](https://lhammer.cn/You-need-to-know-css/#/)
+- [CSSOM 及其相关浏览器 API 使用指南 \[英\]](https://css-tricks.com/an-introduction-and-guide-to-the-css-object-model-cssom/)
 - [CSS布局指南](https://juejin.im/post/5b3b56a1e51d4519646204bb)
 - [CSS 中的各类换行处理方式 \[英\]](https://css-tricks.com/where-lines-break-is-complicated-heres-all-the-related-css-and-html/)：处理经典的换行问题
 - [浏览器将rem转成px时有精度误差怎么办？](https://www.zhihu.com/question/264372456)
@@ -143,6 +151,7 @@
 
 - [Babel 用户手册](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md)
 - [Babel 插件手册](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md)
+- [如何通过 Babel 实现你的自定义 JS 语法](https://lihautan.com/creating-custom-javascript-syntax-with-babel/)
 
 ### 2.6. CSS预处理与模块化
 
@@ -256,6 +265,20 @@
 - [一个媒体文件请求引发的跨站风险 \[英\]](https://jakearchibald.com/2018/i-discovered-a-browser-bug)
 - [Mitigating Spectre \[英\]](https://security.googleblog.com/2018/07/mitigating-spectre-with-site-isolation.html)： Chrome 中的跨站安全问题
 
+### 4.6. 代码保护
+
+- [JavaScript 混淆安全加固](https://segmentfault.com/a/1190000019423501)
+- [前端核心代码保护技术面面观](https://zhuanlan.zhihu.com/p/61651310)
+
+### 4.7. JS沙盒
+
+- [如何在 Web 上实现一个插件系统 \[英\]](https://www.figma.com/blog/how-we-built-the-figma-plugin-system/)
+- [如何安全地运行用户的 JavaScript 脚本](https://zhuanlan.zhihu.com/p/46571509)
+
+### 4.8. 其他
+
+- [一些安全相关的HTTP响应头](https://imququ.com/post/web-security-and-response-header.html)
+
 ## 5. 自动化测试
 
 > 自动化测试是软件工程的重要部分之一，但却极容易被忽视。
@@ -280,6 +303,7 @@
 
 - [测试你的前端代码（集成测试篇）\[英\]](https://hackernoon.com/testing-your-frontend-code-part-iv-integration-testing-f1f4609dc4d9)
 - [测试你的前端代码（可视化测试篇）\[英\]](https://medium.com/@giltayar/testing-your-frontend-code-part-v-visual-testing-935864cfb5c7)
+- [关于 Property Based Testing 的介绍 \[英\]](https://medium.com/criteo-labs/introduction-to-property-based-testing-f5236229d237)
 
 ## 6. 框架与类库
 
@@ -287,6 +311,7 @@
 
 ### 6.1. React
 
+- [手把手教你如何实现一个简易的 React \[英\]](https://engineering.hexacta.com/didact-learning-how-react-works-by-building-it-from-scratch-51007984e5c5)
 - [React 底层揭秘 \[英\]](https://bogdan-lyashenko.github.io/Under-the-hood-ReactJS/)
 - [你所需要知道的 React 细节](https://github.com/hateonion/react-bits-CN)
 - [React Fiber 架构](https://zhuanlan.zhihu.com/p/37095662)
@@ -311,6 +336,7 @@
 - [如何用 GraphQL 来替代 Redux \[英\]](https://hackernoon.com/how-graphql-replaces-redux-3fff8289221d)
 - [解读 Redux 的设计思路与用法](https://div.io/topic/1309)
 - [(Redux)应用构建的三个原则 \[英\]](https://jaysoo.ca/2016/02/28/organizing-redux-application/#rule-1-organize-by-feature)
+- [React-Redux 的发展历史与实现 \[英\]](https://blog.isquaredsoftware.com/2018/11/react-redux-history-implementation/)
 
 ### 6.4. RxJS
 
@@ -374,6 +400,18 @@
   - [五、为什么 WebAssembly 更快？](https://segmentfault.com/a/1190000008699213)
   - [六、WebAssembly 的现在与未来](https://segmentfault.com/a/1190000008714515)
 
+### 7.7. 小程序
+
+- [微信，支付宝小程序实现原理概述](https://segmentfault.com/a/1190000018631528)
+- [小程序底层实现原理及一些思考](https://github.com/berwin/Blog/issues/43)
+
+### 7.8. Serverless
+
+- [Serverless 给前端带来了什么](https://zhuanlan.zhihu.com/p/58877583)
+- [基于 Serverless 的淘宝前端研发模式升级](https://www.infoq.cn/article/KFNcm7Pbq*eIV2dQIpRX)
+- [Serverless，将给前端发展带来大变革的技术？](https://mp.weixin.qq.com/s/ooX7uMFjxFfSai9URo6kYw)
+- [Why Netflix Rolled Its Own Node.js Functions-as-a-Service for its API Platform](https://thenewstack.io/why-netflix-rolled-its-own-node-js-functions-as-a-service-runtime?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
+
 ## 8. 业务相关
 
 > 在业务中往往还有一些与“业务无关”的场景需求 —— 不论是什么业务几乎都会遇到；因此，在变与不变中，我们更需要去抽象出这些问题。
@@ -435,3 +473,5 @@
 - [Recursion? We don't need no stinking recursion!](http://raganwald.com/2018/05/20/we-dont-need-no-stinking-recursion.html)：如何将一些递归改为循环
 - [Turning your web traffic into a Super Computer](https://ben.akrin.com/?p=5997)：通过 Web Worker 和 WebSocket 来将全世界的电脑连接成超级计算机
 - [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)：高屋建瓴
+- [Building a professional design tool on the web](https://www.figma.com/blog/building-a-professional-design-tool-on-the-web/)：如何使用 Web 技术来创建一个设计/渲染系统
+- [Crafting Interpreters](https://craftinginterpreters.com/)：详细介绍了如何实现一个解释器
