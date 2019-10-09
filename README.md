@@ -1,65 +1,56 @@
-Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这里推荐一下笔者新梳理的[「前端性能优化指南 🚀」](https://alienzhou.github.io/fe-performance-journey/)，帮助体系化地了解和学习前端性能优化。
-
----
-
 # 前端技术清单
 
 学习文章的知识往往是碎片化的。而前端涉及到的面很广，这些知识如果不进行有效梳理，则无法相互串联、形成体系。因此，我结合工作体会将抽象出了一些前端基础能力，并将看过、写过的一些不错的文章进行整理，形成了一份（纯）前端技术清单。
 
 不论你是正在自学前端，还是对前端某些技术熟练掌握但某些还未涉足，我都希望这份清单能帮助你 review 一些前端的基础能力。
 
-<!-- TOC -->
-
-- [前端技术清单](#前端技术清单)
-    - [0. 年度报告](#0-年度报告)
-    - [1. 基础拾遗](#1-基础拾遗)
-        - [1.1. JavaScript](#11-javascript)
-        - [1.2. CSS](#12-css)
-        - [1.3. 浏览器](#13-浏览器)
-    - [2. 工程化与工具](#2-工程化与工具)
-        - [2.1. webpack](#21-webpack)
-        - [2.2. Gulp](#22-gulp)
-        - [2.3. Linter](#23-linter)
-        - [2.4. 静态类型（Typescript/Flow）](#24-静态类型typescriptflow)
-        - [2.5. Babel](#25-babel)
-        - [2.6. CSS预处理与模块化](#26-css预处理与模块化)
-    - [3. 性能优化](#3-性能优化)
-        - [3.1. 加载性能](#31-加载性能)
-        - [3.2. 运行时性能](#32-运行时性能)
-        - [3.3. 前端缓存](#33-前端缓存)
-        - [3.4. 性能调试与实践](#34-性能调试与实践)
-        - [3.5. 性能指标](#35-性能指标)
-    - [4. 安全](#4-安全)
-        - [4.1. XSS](#41-xss)
-        - [4.2. CSRF](#42-csrf)
-        - [4.3. CSP](#43-csp)
-        - [4.4. HTTPS](#44-https)
-        - [4.5. 安全实录](#45-安全实录)
-    - [5. 自动化测试](#5-自动化测试)
-        - [5.1. 单元测试](#51-单元测试)
-        - [5.2. 端到端测试 (E2E)](#52-端到端测试-e2e)
-        - [5.3. 其他](#53-其他)
-    - [6. 框架与类库](#6-框架与类库)
-        - [6.1. React](#61-react)
-        - [6.2. Vue](#62-vue)
-        - [6.3. Redux](#63-redux)
-        - [6.4. RxJS](#64-rxjs)
-    - [7. 新技术/方向](#7-新技术方向)
-        - [7.1. PWA](#71-pwa)
-        - [7.2. CSS Houdini](#72-css-houdini)
-        - [7.3. Web Components](#73-web-components)
-        - [7.4. 微前端（Micro Frontends）](#74-微前端micro-frontends)
-        - [7.5. HTTP/2](#75-http2)
-        - [7.6. WebAssembly](#76-webassembly)
-    - [8. 业务相关](#8-业务相关)
-        - [8.1. 数据打点上报](#81-数据打点上报)
-        - [8.2. 前端监控](#82-前端监控)
-        - [8.3. A/B测试](#83-ab测试)
-        - [8.4. “服务端推”](#84-服务端推)
-        - [8.5. 动效](#85-动效)
-    - [9. 不归类的好文](#9-不归类的好文)
-
-<!-- /TOC -->
+- [0. 年度报告](#0-年度报告)
+- [1. 基础拾遗](#1-基础拾遗)
+  - [1.1. JavaScript](#11-javascript)
+  - [1.2. CSS](#12-css)
+  - [1.3. 浏览器](#13-浏览器)
+- [2. 工程化与工具](#2-工程化与工具)
+  - [2.1. webpack](#21-webpack)
+  - [2.2. Gulp](#22-gulp)
+  - [2.3. Linter](#23-linter)
+  - [2.4. 静态类型（Typescript/Flow）](#24-静态类型typescriptflow)
+  - [2.5. Babel](#25-babel)
+  - [2.6. CSS预处理与模块化](#26-css预处理与模块化)
+- [3. 性能优化](#3-性能优化)
+  - [3.1. 加载性能](#31-加载性能)
+  - [3.2. 运行时性能](#32-运行时性能)
+  - [3.3. 前端缓存](#33-前端缓存)
+  - [3.4. 性能调试与实践](#34-性能调试与实践)
+  - [3.5. 性能指标](#35-性能指标)
+- [4. 安全](#4-安全)
+  - [4.1. XSS](#41-xss)
+  - [4.2. CSRF](#42-csrf)
+  - [4.3. CSP](#43-csp)
+  - [4.4. HTTPS](#44-https)
+  - [4.5. 安全实录](#45-安全实录)
+- [5. 自动化测试](#5-自动化测试)
+  - [5.1. 单元测试](#51-单元测试)
+  - [5.2. 端到端测试 (E2E)](#52-端到端测试-e2e)
+  - [5.3. 其他](#53-其他)
+- [6. 框架与类库](#6-框架与类库)
+  - [6.1. React](#61-react)
+  - [6.2. Vue](#62-vue)
+  - [6.3. Redux](#63-redux)
+  - [6.4. RxJS](#64-rxjs)
+- [7. 新技术/方向](#7-新技术方向)
+  - [7.1. PWA](#71-pwa)
+  - [7.2. CSS Houdini](#72-css-houdini)
+  - [7.3. Web Components](#73-web-components)
+  - [7.4. 微前端（Micro Frontends）](#74-微前端micro-frontends)
+  - [7.5. HTTP/2](#75-http2)
+  - [7.6. WebAssembly](#76-webassembly)
+- [8. 业务相关](#8-业务相关)
+  - [8.1. 数据打点上报](#81-数据打点上报)
+  - [8.2. 前端监控](#82-前端监控)
+  - [8.3. A/B测试](#83-ab测试)
+  - [8.4. “服务端推”](#84-服务端推)
+  - [8.5. 动效](#85-动效)
+- [9. 不归类的好文](#9-不归类的好文)
 
 ## 0. 年度报告
 
@@ -74,14 +65,14 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 
 - [You-Dont-Know-JS \[英\]](https://github.com/getify/You-Dont-Know-JS)
 - JavaScript 基础运行机制：
-    - [JS 引擎、运行时与调用栈概述 \[英\]](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
-    - [V8 引擎简介 \[英\]](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e)
-    - [内存管理与4中常见的泄漏 \[英\]](https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec)
+  - [JS 引擎、运行时与调用栈概述 \[英\]](https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf)
+  - [V8 引擎简介 \[英\]](https://blog.sessionstack.com/how-javascript-works-inside-the-v8-engine-5-tips-on-how-to-write-optimized-code-ac089e62b12e)
+  - [内存管理与4中常见的泄漏 \[英\]](https://blog.sessionstack.com/how-javascript-works-memory-management-how-to-handle-4-common-memory-leaks-3f28b94cfbec)
 - Event Loop（面试里总会有一题 Event Loop…）：
-    - [从 Event Loop 规范探究 JavaScript 异步及浏览器更新渲染时机](https://github.com/aooy/blog/issues/5)
-    - [异步之 Event Loop \[英\]](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
-    - [NodeJS 中的 Event Loop、Timers 与 `process.nextTick()` \[英\]](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
-    - [Tasks、Microtasks、Queues 与Schedules \[英\]](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
+  - [从 Event Loop 规范探究 JavaScript 异步及浏览器更新渲染时机](https://github.com/aooy/blog/issues/5)
+  - [异步之 Event Loop \[英\]](https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5)
+  - [NodeJS 中的 Event Loop、Timers 与 `process.nextTick()` \[英\]](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
+  - [Tasks、Microtasks、Queues 与Schedules \[英\]](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 - [Web Workers 及其5个常见使用场景 \[英\]](https://blog.sessionstack.com/how-javascript-works-the-building-blocks-of-web-workers-5-cases-when-you-should-use-them-a547c0757f6a)
 - [如何避免 async/await 地狱 \[英\]](https://medium.freecodecamp.org/avoiding-the-async-await-hell-c77a0fb71c4c)
 - [“回调地狱”的解决思路汇总](https://www.jianshu.com/p/bc7b8d542dcd)
@@ -103,10 +94,10 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 
 - [浏览器的工作原理](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
 - 现代浏览器内部是如何运行的：
-    - [Chrome浏览器概览](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
-    - [浏览时发生了什么？](https://developers.google.com/web/updates/2018/09/inside-browser-part2)
-    - [渲染进程的内部工作原理](https://developers.google.com/web/updates/2018/09/inside-browser-part3)
-    - [compositor是如何来提高交互性能的？](https://developers.google.com/web/updates/2018/09/inside-browser-part4)
+  - [Chrome浏览器概览](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
+  - [浏览时发生了什么？](https://developers.google.com/web/updates/2018/09/inside-browser-part2)
+  - [渲染进程的内部工作原理](https://developers.google.com/web/updates/2018/09/inside-browser-part3)
+  - [compositor是如何来提高交互性能的？](https://developers.google.com/web/updates/2018/09/inside-browser-part4)
 - [完整的页面生命周期 API 介绍 \[英\]](https://developers.google.com/web/updates/2018/07/page-lifecycle-api)
 - [四个新的观察者：Intersection / Mutation / Resize / Performance (Observer)](https://www.zeolearn.com/magazine/different-types-of-observers-supported-by-modern-browsers)
 - [渲染引擎工作方式及优化建议 \[英\]](https://blog.sessionstack.com/how-javascript-works-the-rendering-engine-and-tips-to-optimize-its-performance-7b95553baeda)
@@ -122,13 +113,13 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 - [webpack 中的 Chunk 关系图算法 \[英\]](https://medium.com/webpack/the-chunk-graph-algorithm-week-26-29-7c88aa5e4b4e)
 - [webpack 进阶系列文章](https://juejin.im/post/5bc1a73df265da0a8d36b74f#heading-13)
 - 编译优化：
-    - [如何提升大型项目中 webpack 的性能 🎥 \[英\]](https://www.youtube.com/watch?v=AifDI71uqF0)
-    - [运行时优化：Separating a Manifest \[英\]](https://survivejs.com/webpack/optimizing/separating-manifest)
-    - [在 webpack 中使用 \<link rel=”prefetch/preload”> \[英\]](https://medium.com/webpack/link-rel-prefetch-preload-in-webpack-51a52358f84c)
-    - [如何更好使用 webpack tree-shaking](https://juejin.im/post/5b8ce49df265da438151b468)
+  - [如何提升大型项目中 webpack 的性能 🎥 \[英\]](https://www.youtube.com/watch?v=AifDI71uqF0)
+  - [运行时优化：Separating a Manifest \[英\]](https://survivejs.com/webpack/optimizing/separating-manifest)
+  - [在 webpack 中使用 \<link rel=”prefetch/preload”> \[英\]](https://medium.com/webpack/link-rel-prefetch-preload-in-webpack-51a52358f84c)
+  - [如何更好使用 webpack tree-shaking](https://juejin.im/post/5b8ce49df265da438151b468)
 - 关于 webpack 编译缓存的讨论：
-    - [mzgoddard's comment](https://github.com/webpack/webpack/issues/250#issuecomment-240643985)
-    - [\[spec: webpack 5\] - A module disk cache between build processes](https://github.com/webpack/webpack/issues/6527)
+  - [mzgoddard's comment](https://github.com/webpack/webpack/issues/250#issuecomment-240643985)
+  - [\[spec: webpack 5\] - A module disk cache between build processes](https://github.com/webpack/webpack/issues/6527)
 
 ### 2.2. Gulp
 
@@ -144,9 +135,9 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 
 - [Typescript 总体架构 \[英\]](https://github.com/Microsoft/TypeScript/wiki/Architectural-Overview)
 - 为什么要在 JavaScript 中进行静态类型检查：
-    - [第一部分](https://www.jianshu.com/p/bda750e2d15e)
-    - [第二、三部分](https://www.jianshu.com/p/289b3c734a9f)
-    - [第四部分](https://www.jianshu.com/p/d23f93be8821)
+  - [第一部分](https://www.jianshu.com/p/bda750e2d15e)
+  - [第二、三部分](https://www.jianshu.com/p/289b3c734a9f)
+  - [第四部分](https://www.jianshu.com/p/d23f93be8821)
 
 ### 2.5. Babel
 
@@ -162,7 +153,9 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 
 > 性能优化其实就是在理解浏览器的基础上“因地制宜”，因此可以配合1.3节“浏览器”部分进行理解。
 
-强烈推荐把 [Google Web 上性能优化](https://developers.google.com/web/fundamentals/performance/why-performance-matters/) Tab 中的文章都通读一遍，其基本涵盖了现代浏览器中性能优化的所有点。下面也摘录了其中一些个人认为非常不错的篇幅。
+强烈推荐把 [Google Web 上性能优化](https://developers.google.com/web/fundamentals/performance/why-performance-matters/) Tab 中的文章都通读一遍，其基本涵盖了现代浏览器中性能优化的所有点。笔者也梳理了一份[「前端性能优化指南 🚀」](https://alienzhou.github.io/fe-performance-journey/)，可以帮助大家系统地了解和学习前端性能优化。
+
+下面也摘录了其中一些个人认为非常不错的文章。
 
 ### 3.1. 加载性能
 
@@ -180,12 +173,12 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 - [无线性能优化：Composite](http://taobaofed.org/blog/2016/04/25/performance-composite/)
 - [如何不择手段提升scroll事件的性能](https://zhuanlan.zhihu.com/p/30078937)
 - [使用 passive event listener 来提高滚动流畅性 \[英\]](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
-- 节流和去抖（throttle & debounce）：
-    - [JavaScript 函数节流和函数去抖应用场景辨析](https://github.com/hanzichi/underscore-analysis/issues/20)
-    - [underscore 函数去抖的实现](https://github.com/hanzichi/underscore-analysis/issues/21)
-- requestIdleCallback - 一个强大而神器的 API：
-    - [requestIdleCallback使用入门 \[英\]](https://developers.google.com/web/updates/2015/08/using-requestidlecallback)
-    - [Idle Until Urgent \[英\]](https://philipwalton.com/articles/idle-until-urgent)：requestIdleCallback的妙用
+- 节流和去抖（throttle & debounce）
+  - [JavaScript 函数节流和函数去抖应用场景辨析](https://github.com/hanzichi/underscore-analysis/issues/20)
+  - [underscore 函数去抖的实现](https://github.com/hanzichi/underscore-analysis/issues/21)
+- requestIdleCallback
+  - [requestIdleCallback使用入门 \[英\]](https://developers.google.com/web/updates/2015/08/using-requestidlecallback)
+  - [Idle Until Urgent \[英\]](https://philipwalton.com/articles/idle-until-urgent)：requestIdleCallback的妙用
 
 ### 3.3. 前端缓存
 
@@ -208,25 +201,25 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 
 - [以用户为中心的前端性能指标 \[英\]](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics)：前端性能指标的来龙去脉
 - DOMContentLoaded:
-    - [你不知道的 DOMContentLoaded](https://zhuanlan.zhihu.com/p/25876048)
-    - [Deciphering the Critical Rendering Path \[英\]](https://calendar.perfplanet.com/2012/deciphering-the-critical-rendering-path/)
+  - [你不知道的 DOMContentLoaded](https://zhuanlan.zhihu.com/p/25876048)
+  - [Deciphering the Critical Rendering Path \[英\]](https://calendar.perfplanet.com/2012/deciphering-the-critical-rendering-path/)
 - FP (First Paint)：
-    - [Chrome的First Paint](http://eux.baidu.com/blog/fe/Chrome%E7%9A%84First%20Paint)
+  - [Chrome的First Paint](http://eux.baidu.com/blog/fe/Chrome%E7%9A%84First%20Paint)
 - FCP (First Contentful Paint)：
-    - [First Contentful Paint Explained \[英\]](https://gtmetrix.com/blog/first-contentful-paint-explained/)
-    - [First Contentful Paint \[英\]](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint)
+  - [First Contentful Paint Explained \[英\]](https://gtmetrix.com/blog/first-contentful-paint-explained/)
+  - [First Contentful Paint \[英\]](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint)
 - FMP (First Meaningful Paint)：
-    - [Chrome 中的 First Meaningful Paint](https://juejin.im/entry/598080226fb9a03c5d535cd5)
-    - [Time to First Meaningful Paint](https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view?hl=zh-cn#heading=h.k50nnyhtptq0)
+  - [Chrome 中的 First Meaningful Paint](https://juejin.im/entry/598080226fb9a03c5d535cd5)
+  - [Time to First Meaningful Paint](https://docs.google.com/document/d/1BR94tJdZLsin5poeet0XoTW60M0SjvOJQttKT-JK8HI/view?hl=zh-cn#heading=h.k50nnyhtptq0)
 - TTI (Time to interactive)：
-    - [Time to Interactive Explainer](https://github.com/WICG/time-to-interactive)
-    - [衡量用户体验的新标准](https://calendar.perfplanet.com/2017/time-to-interactive-measuring-more-of-the-user-experience/)
+  - [Time to Interactive Explainer](https://github.com/WICG/time-to-interactive)
+  - [衡量用户体验的新标准](https://calendar.perfplanet.com/2017/time-to-interactive-measuring-more-of-the-user-experience/)
 - TTFB (Time To First Byte)：
-    - [TTFB，以及页面加载的时间节点](https://zhuanlan.zhihu.com/p/23588780)
+  - [TTFB，以及页面加载的时间节点](https://zhuanlan.zhihu.com/p/23588780)
 - FID (First Input Delay)：
-    - [First Input Delay](https://developers.google.com/web/updates/2018/05/first-input-delay)
+  - [First Input Delay](https://developers.google.com/web/updates/2018/05/first-input-delay)
 - Speed Index：
-    - [WebPagetest: Speed Index](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index)
+  - [WebPagetest: Speed Index](https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index)
 
 ## 4. 安全
 
@@ -300,10 +293,10 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 - [React 16 Fiber 源码速览](http://zxc0328.github.io/2017/09/28/react-16-source/)
 - [React 是怎样炼成的](https://segmentfault.com/a/1190000013365426)：React早期的进化之路
 - 从零开始实现一个React：
-    - [1. JSX和虚拟DOM](https://github.com/hujiulong/blog/issues/4)
-    - [2. 组件和生命周期](https://github.com/hujiulong/blog/issues/5)
-    - [3. diff算法](https://github.com/hujiulong/blog/issues/6)
-    - [4. 异步的setState](https://github.com/hujiulong/blog/issues/7)
+  - [1. JSX和虚拟DOM](https://github.com/hujiulong/blog/issues/4)
+  - [2. 组件和生命周期](https://github.com/hujiulong/blog/issues/5)
+  - [3. diff算法](https://github.com/hujiulong/blog/issues/6)
+  - [4. 异步的setState](https://github.com/hujiulong/blog/issues/7)
 - [「react技术栈」单页应用实践快速入门](https://www.jianshu.com/p/0b2acb50f321)
 - [React 生命周期图示](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
@@ -326,7 +319,6 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 - [图解RxJS \[英\]](https://blog.angularindepth.com/learn-to-combine-rxjs-sequences-with-super-intuitive-interactive-diagrams-20fce8e6511)
 - [调试RxJS：Tooling \[英\]](https://blog.angularindepth.com/debugging-rxjs-4f0340286dd3)
 - [调试RxJS：Logging \[英\]](https://blog.angularindepth.com/debugging-rxjs-part-2-logging-56904459f144)
-
 
 ## 7. 新技术/方向
 
@@ -367,20 +359,20 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 - [HTTP/2 幕后原理](https://www.ibm.com/developerworks/cn/web/wa-http2-under-the-hood/index.html)
 - [全面介绍的 HTTP/2 \[英\]](https://hpbn.co/http2/)
 - [HTTP/2 主页](https://http2.github.io/):
-    - [HTTP/2 协议 \[英\]](https://httpwg.org/specs/rfc7540.html)
-    - [HPACK: HTTP/2 Header压缩 \[英\]](https://httpwg.org/specs/rfc7541.html)
+  - [HTTP/2 协议 \[英\]](https://httpwg.org/specs/rfc7540.html)
+  - [HPACK: HTTP/2 Header压缩 \[英\]](https://httpwg.org/specs/rfc7541.html)
 
 ### 7.6. WebAssembly
 
 - [WebAssembly 官网](https://webassembly.org/)
 - [WebAssembly 现状与实战](https://www.ibm.com/developerworks/cn/web/wa-lo-webassembly-status-and-reality/index.html)
 - WebAssembly 系列：
-    - [一、生动形象地介绍 WebAssembly](https://segmentfault.com/a/1190000008714589)
-    - [二、JavaScript Just-in-time (JIT) 工作原理](https://segmentfault.com/a/1190000008632441)
-    - [三、编译器如何生成汇编](https://segmentfault.com/a/1190000008664761)
-    - [四、WebAssembly 工作原理](https://segmentfault.com/a/1190000008686643)
-    - [五、为什么 WebAssembly 更快？](https://segmentfault.com/a/1190000008699213)
-    - [六、WebAssembly 的现在与未来](https://segmentfault.com/a/1190000008714515)
+  - [一、生动形象地介绍 WebAssembly](https://segmentfault.com/a/1190000008714589)
+  - [二、JavaScript Just-in-time (JIT) 工作原理](https://segmentfault.com/a/1190000008632441)
+  - [三、编译器如何生成汇编](https://segmentfault.com/a/1190000008664761)
+  - [四、WebAssembly 工作原理](https://segmentfault.com/a/1190000008686643)
+  - [五、为什么 WebAssembly 更快？](https://segmentfault.com/a/1190000008699213)
+  - [六、WebAssembly 的现在与未来](https://segmentfault.com/a/1190000008714515)
 
 ## 8. 业务相关
 
@@ -397,26 +389,27 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 - [监控平台前端SDK开发实践](https://tech.meituan.com/hunt_sdk_practice.html)
 - [把前端监控做到极致](https://zhuanlan.zhihu.com/p/32262716)
 - [前端监控系统探索总结](https://juejin.im/post/5a3e121451882533f01ec66d)
+- [60 天急速自研-搭建前端埋点监控系统](https://juejin.im/post/5d8d9eeaf265da5b783ef45c)
 
 ### 8.3. A/B测试
 
 - Twitter的A/B测试实践：
-    - [一、为什么要测试以及测试的意义](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part01)
-    - [二、技术概述](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part02)
-    - [三、检测和避免 A/B Test中 bucket不平衡问题](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part03)
-    - [四、A/B Test中使用多个控制的启示](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part04)
+  - [一、为什么要测试以及测试的意义](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part01)
+  - [二、技术概述](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part02)
+  - [三、检测和避免 A/B Test中 bucket不平衡问题](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part03)
+  - [四、A/B Test中使用多个控制的启示](http://www.infoq.com/cn/articles/twitter-ab-test-practise-part04)
 - [Netflix A/B Test 实验平台实践 \[英\]](https://medium.com/netflix-techblog/its-all-a-bout-testing-the-netflix-experimentation-platform-4e1ca458c15)
 - 指导方法
-    - [实验中容易遇到的七种问题 \[英\]](https://www.exp-platform.com/Documents/2009-ExPpitfalls.pdf)
-    - [实验的七个准则 \[英\]](https://www.exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf)
-    - [小流量如何进行AB测试](https://www.jianshu.com/p/3ab537f16b81)
+  - [实验中容易遇到的七种问题 \[英\]](https://www.exp-platform.com/Documents/2009-ExPpitfalls.pdf)
+  - [实验的七个准则 \[英\]](https://www.exp-platform.com/Documents/2014%20experimentersRulesOfThumb.pdf)
+  - [小流量如何进行AB测试](https://www.jianshu.com/p/3ab537f16b81)
 - 案例分享
-    - [大众点评AB测试框架Gemini](https://www.csdn.net/article/2015-03-24/2824303)
-    - [新浪新闻客户端AB测试与灰度发布](https://segmentfault.com/a/1190000012377139)
-    - [天猫App A/B测试实践](http://www.infoq.com/cn/articles/tmall-app-ab-test)
+  - [大众点评AB测试框架Gemini](https://www.csdn.net/article/2015-03-24/2824303)
+  - [新浪新闻客户端AB测试与灰度发布](https://segmentfault.com/a/1190000012377139)
+  - [天猫App A/B测试实践](http://www.infoq.com/cn/articles/tmall-app-ab-test)
 - 工具
-    - [AB测试样本数量计算器](https://www.eyeofcloud.com/124.html)
-    - [AB测试结果有效性分析工具](https://www.eyeofcloud.com/126.html)
+  - [AB测试样本数量计算器](https://www.eyeofcloud.com/124.html)
+  - [AB测试结果有效性分析工具](https://www.eyeofcloud.com/126.html)
 
 ### 8.4. “服务端推”
 
@@ -432,17 +425,13 @@ Update 2019.08.15: 性能优化是前端老生常谈的一个重要部分，这�
 - [贝塞尔曲线扫盲](http://www.html-js.com/article/1628)
 - [动画：从 AE 到 Web](https://aotu.io/notes/2018/03/06/ae2web/)
 - 最全最好用的动效落地方法：
-    - [基础知识](https://zhuanlan.zhihu.com/p/34501702)
-    - [落地方式](https://zhuanlan.zhihu.com/p/34815524)
+  - [基础知识](https://zhuanlan.zhihu.com/p/34501702)
+  - [落地方式](https://zhuanlan.zhihu.com/p/34815524)
 
 ## 9. 其他
 
 > 开卷有益。
 
-- [Recursion? We don't need no stinking recursion!](http://raganwald.com/2018/05/20/we-dont-need-no-stinking-recursion.html)：如何将一些递归改为循环（尾递归优化）
+- [Recursion? We don't need no stinking recursion!](http://raganwald.com/2018/05/20/we-dont-need-no-stinking-recursion.html)：如何将一些递归改为循环
 - [Turning your web traffic into a Super Computer](https://ben.akrin.com/?p=5997)：通过 Web Worker 和 WebSocket 来将全世界的电脑连接成超级计算机
-- [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)：高屋建瓴，适合阅读与思考
-
----
-
-> 有同学反馈说清单内容较多，一次无法读完，过了一段时间回来就记不清阅读进度了。为了便于大家分次阅读，我制作了一个页面，在每篇文章前加上选择框（选中checkbox表示已读）用于记录你已经读过的文章，便于下次回来时继续阅读。页面链接：[Frontend Tech List](https://alienzhou.github.io/frontend-tech-list/)
+- [Designing very large (JavaScript) applications](https://medium.com/@cramforce/designing-very-large-javascript-applications-6e013a3291a3)：高屋建瓴
