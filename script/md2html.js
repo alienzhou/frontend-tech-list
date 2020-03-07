@@ -29,7 +29,8 @@ function convertMd2Html() {
 
     html = tpl
         .replace(/\{\{style\}\}/, `<style>${style}</style>`)
-        .replace(/\{\{md\}\}/, mdHtml);
+        .replace(/\{\{md\}\}/, mdHtml)
+        .replace(/(<h1[^>]*?>.*?<\/h1>)/, '<a class="effect" href="https://github.com/alienzhou/frontend-tech-list">$1</a>');
 
     fs.writeFileSync(path.resolve(buildDir, 'index.html'), html, 'utf-8');
     console.log('convert md to html success!');

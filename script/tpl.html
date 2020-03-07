@@ -25,6 +25,23 @@
         .progress span {
             color: #3bc536;
         }
+
+        .effect h1 {
+            padding: 0.1em 0;
+            margin: 0.5em auto;
+            display: inline-block;
+            border-bottom: 2px solid #0074d9;
+        }
+        .effect:hover h1 {
+            opacity: 0.8;
+        }
+        .effect:hover h1::after {
+            padding-left: 15px;
+        }
+        .effect h1::after {
+            content: '>>';
+            padding-left: 5px;
+        }
     </style>
     <title>Frontend Tech List: an overall frontend-tech list for developers</title>
 </head>
